@@ -1,0 +1,51 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin:0; padding:0; background:#f8f8f8; color:#333;
+}
+
+header {
+  background: linear-gradient(90deg, #264653, #2a9d8f);
+  color:white;
+  text-align:center;
+  padding:50px 20px;
+}
+header h1 { font-size:3em; margin:0; }
+header p { font-size:1.2em; margin-top:10px; }
+
+.sticky-nav {
+  position:sticky; top:0; background:#e76f51; padding:10px 0; text-align:center; z-index:1000;
+}
+.sticky-nav a {
+  margin:0 15px; color:white; text-decoration:none; font-weight:600;
+  transition:transform 0.3s, color 0.3s;
+}
+.sticky-nav a:hover { transform:scale(1.1); color:#f4a261; }
+
+.services { padding:60px 20px; text-align:center; background:#fff; }
+.services-grid { display:flex; flex-wrap:wrap; justify-content:center; gap:30px; }
+.service-block { background:#fefefe; padding:30px 20px; border-radius:10px; width:300px; transition:transform 0.3s, box-shadow 0.3s; }
+.service-block:hover { transform:translateY(-10px); box-shadow:0 10px 20px rgba(0,0,0,0.2); }
+.btn { background:#264653; color:white; padding:10px 20px; border:none; border-radius:5px; cursor:pointer; transition:all 0.3s; }
+.btn:hover { background:#2a9d8f; transform:scale(1.1); }
+
+.uniform-img { width:250px; height:250px; object-fit:cover; border-radius:10px; transition:transform 0.3s, box-shadow 0.3s; }
+.uniform-img:hover { transform:scale(1.05); box-shadow:0 10px 20px rgba(0,0,0,0.2); }
+
+.materials { padding:60px 20px; text-align:center; background:#fefefe; }
+.materials-grid { display:flex; flex-wrap:wrap; gap:20px; justify-content:center; }
+.material-block { text-align:center; transition:transform 0.3s; }
+.material-block:hover { transform:translateY(-5px); }
+
+.portfolio { padding:60px 20px; background:#fff; text-align:center; }
+.swiper { padding:20px 0; }
+
+.contact { background:#264653; color:white; text-align:center; padding:60px 20px; }
+.contact a { color:#2a9d8f; text-decoration:none; transition:color 0.3s; }
+.contact a:hover { color:#f4a261; }
+
+.location { padding:60px 20px; text-align:center; background:#fefefe; }
+
+@media(max-width:768px){
+  .services-grid, .materials-grid { flex-direction:column; align-items:center; }
+  .uniform-img { width:200px; height:200px; }
+} 
